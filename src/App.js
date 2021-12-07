@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+let name1="ishan"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <nav className="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">News App</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div className="navbar-nav">
+        <a className="nav-link active" aria-current="page" href="#">Home</a>
+        <a className="nav-link" href="#">About</a>
+        <a className="nav-link" href="#">Contact</a>
+        <a className="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </div>
     </div>
+  </div>
+</nav>
+    </>
   );
 }
 
